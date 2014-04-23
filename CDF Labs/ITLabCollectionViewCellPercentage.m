@@ -1,15 +1,16 @@
 //
-//  ITLabCollectionViewCell.m
+//  ITLabCollectionViewCellPercentage.m
 //  CDF Labs
 //
-//  Created by Ishan Thukral on 2014-04-22.
+//  Created by Ishan Thukral on 2014-04-23.
 //  Copyright (c) 2014 Ishan Thukral. All rights reserved.
 //
 
-#import "ITLabCollectionViewCell.h"
+#import "ITLabCollectionViewCellPercentage.h"
 #import "UIColor+CDFLabs.h"
+#import "ITLab.h"
 
-@implementation ITLabCollectionViewCell
+@implementation ITLabCollectionViewCellPercentage
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -22,10 +23,10 @@
 
 - (void)setupCellWithLab:(ITLab *)lab {
     self.labName.text = lab.labName;
-    self.totalMachines.text = [NSString stringWithFormat:@"%@", lab.totalMachines];
-    self.freeMachines.text = [NSString stringWithFormat:@"%@", lab.freeMachines];
+    self.labBusyPercentage.text = [NSString stringWithFormat:@"%@%%", lab.percentageBusy];
     self.labNameBackground.backgroundColor = [UIColor labCellBackgroundColor];
     self.topCellBackground.backgroundColor = ([lab.percentageBusy integerValue] > 80) ? [UIColor labCellRedColor] : [UIColor labCellGreenColor];
 }
+
 
 @end

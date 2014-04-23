@@ -14,6 +14,10 @@
 		86041DCD1907328500F1C075 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 86041DCB1907328500F1C075 /* XPathQuery.m */; };
 		86041DD01907337400F1C075 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86041DCF1907337400F1C075 /* libxml2.dylib */; };
 		86041DD3190736B300F1C075 /* ITLabParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 86041DD2190736B300F1C075 /* ITLabParser.m */; };
+		8633AF7D190801DD00E18079 /* ITLabCollectionViewCellPercentage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633AF7C190801DD00E18079 /* ITLabCollectionViewCellPercentage.m */; };
+		8633AF7F190801EE00E18079 /* ITLabCollectionViewCellPercentage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8633AF7E190801EE00E18079 /* ITLabCollectionViewCellPercentage.xib */; };
+		8633AF8219080D8F00E18079 /* ITLabInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633AF8119080D8F00E18079 /* ITLabInfoView.m */; };
+		8633AF8419080D9E00E18079 /* ITLabInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8633AF8319080D9E00E18079 /* ITLabInfoView.xib */; };
 		8650ADAE1906DB05009CF008 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650ADAD1906DB05009CF008 /* Foundation.framework */; };
 		8650ADB01906DB05009CF008 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650ADAF1906DB05009CF008 /* CoreGraphics.framework */; };
 		8650ADB21906DB05009CF008 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8650ADB11906DB05009CF008 /* UIKit.framework */; };
@@ -60,6 +64,12 @@
 		86041DCF1907337400F1C075 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxml2.dylib; sourceTree = "<group>"; };
 		86041DD1190736B300F1C075 /* ITLabParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabParser.h; sourceTree = "<group>"; };
 		86041DD2190736B300F1C075 /* ITLabParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabParser.m; sourceTree = "<group>"; };
+		8633AF7B190801DD00E18079 /* ITLabCollectionViewCellPercentage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabCollectionViewCellPercentage.h; sourceTree = "<group>"; };
+		8633AF7C190801DD00E18079 /* ITLabCollectionViewCellPercentage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabCollectionViewCellPercentage.m; sourceTree = "<group>"; };
+		8633AF7E190801EE00E18079 /* ITLabCollectionViewCellPercentage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITLabCollectionViewCellPercentage.xib; sourceTree = "<group>"; };
+		8633AF8019080D8F00E18079 /* ITLabInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabInfoView.h; sourceTree = "<group>"; };
+		8633AF8119080D8F00E18079 /* ITLabInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabInfoView.m; sourceTree = "<group>"; };
+		8633AF8319080D9E00E18079 /* ITLabInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITLabInfoView.xib; sourceTree = "<group>"; };
 		8650ADAA1906DB05009CF008 /* CDF Labs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDF Labs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8650ADAD1906DB05009CF008 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8650ADAF1906DB05009CF008 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -250,6 +260,12 @@
 				86DAC1701907583100877DBF /* ITLabCollectionViewCell.h */,
 				86DAC1711907583100877DBF /* ITLabCollectionViewCell.m */,
 				86DAC1731907584500877DBF /* ITLabCollectionViewCell.xib */,
+				8633AF7B190801DD00E18079 /* ITLabCollectionViewCellPercentage.h */,
+				8633AF7C190801DD00E18079 /* ITLabCollectionViewCellPercentage.m */,
+				8633AF7E190801EE00E18079 /* ITLabCollectionViewCellPercentage.xib */,
+				8633AF8019080D8F00E18079 /* ITLabInfoView.h */,
+				8633AF8119080D8F00E18079 /* ITLabInfoView.m */,
+				8633AF8319080D9E00E18079 /* ITLabInfoView.xib */,
 			);
 			name = Views;
 			path = ..;
@@ -351,8 +367,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8633AF7F190801EE00E18079 /* ITLabCollectionViewCellPercentage.xib in Resources */,
 				8650ADDD1906DB6C009CF008 /* MainStoryboard.storyboard in Resources */,
 				8650ADB81906DB05009CF008 /* InfoPlist.strings in Resources */,
+				8633AF8419080D9E00E18079 /* ITLabInfoView.xib in Resources */,
 				86DAC1741907584500877DBF /* ITLabCollectionViewCell.xib in Resources */,
 				8650ADC01906DB05009CF008 /* Images.xcassets in Resources */,
 			);
@@ -409,12 +427,14 @@
 				86041D7619072BEF00F1C075 /* ITLab.m in Sources */,
 				86DAC16B1907565300877DBF /* UIColor+CDFLabs.m in Sources */,
 				86DAC1721907583100877DBF /* ITLabCollectionViewCell.m in Sources */,
+				8633AF7D190801DD00E18079 /* ITLabCollectionViewCellPercentage.m in Sources */,
 				86041DCD1907328500F1C075 /* XPathQuery.m in Sources */,
 				86041D7919072CCD00F1C075 /* ITLabStore.m in Sources */,
 				86041DD3190736B300F1C075 /* ITLabParser.m in Sources */,
 				86DAC17719075A6500877DBF /* ITLabCollectionViewController.m in Sources */,
 				8650ADBA1906DB05009CF008 /* main.m in Sources */,
 				86041DCC1907328500F1C075 /* TFHppleElement.m in Sources */,
+				8633AF8219080D8F00E18079 /* ITLabInfoView.m in Sources */,
 				8650ADBE1906DB05009CF008 /* ITAppDelegate.m in Sources */,
 				86041DC61907327600F1C075 /* TFHpple.m in Sources */,
 			);
@@ -549,6 +569,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -572,6 +593,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

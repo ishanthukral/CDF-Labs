@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-# pragma mark - ITLabTableViewController
+# pragma mark - ITLabCollectionViewController
 static NSString *const kAppName = @"CDF Labs";
+static NSString *const kViewModeNSUserDefaultsKey = @"viewMode";
+static NSString *const kViewModeCount = @"viewModeCount";
+static NSString *const kViewModePercent = @"viewModePercent";
+static NSString *const kTwitterLink = @"http://www.twitter.com/ishanthukral";
 
 # pragma mark - Parser
 static NSString *const kLabUsageUrl = @"http://www.cdf.toronto.edu/usage";

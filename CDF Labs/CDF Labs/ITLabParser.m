@@ -59,7 +59,7 @@ static ITLabParser *instance;
     NSString *machinesTotal = [[((TFHppleElement *)[data objectAtIndex:totalMachines]) firstChild] content];
     
     // Add BA to labNumber
-    NSString *labNameString = [NSString stringWithFormat:@"BA%@", labNumber];
+    NSString *labNameString = [NSString stringWithFormat:@"BA %@", labNumber];
     
     ITLab *lab = [[ITLab alloc] initWithLabName:labNameString
                                andTotalMachines:[NSNumber numberWithInteger:[machinesTotal integerValue]]

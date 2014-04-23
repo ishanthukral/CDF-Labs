@@ -1,10 +1,13 @@
 PODS:
+  - FXBlurView (1.6)
   - Reachability (3.1.1)
 
 DEPENDENCIES:
+  - FXBlurView
   - Reachability (~> 3.1)
 
 SPEC CHECKSUMS:
+  FXBlurView: 06f9f602d529c8e2d87648293d73a618621d3d81
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
 
 COCOAPODS: 0.32.1
