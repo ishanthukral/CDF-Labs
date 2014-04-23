@@ -11,5 +11,7 @@
 @interface UIColor (CDFLabs)
 
 + (UIColor *)labCellGreenColor;
++ (UIColor *)labCellRedColor;
++ (UIColor *)labCellBackgroundColor;
 
 @end

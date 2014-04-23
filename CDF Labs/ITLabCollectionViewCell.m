@@ -7,6 +7,7 @@
 //
 
 #import "ITLabCollectionViewCell.h"
+#import "UIColor+CDFLabs.h"
 
 @implementation ITLabCollectionViewCell
 
@@ -23,6 +24,11 @@
     self.labName.text = lab.labName;
     self.totalMachines.text = [NSString stringWithFormat:@"%@", lab.totalMachines];
     self.freeMachines.text = [NSString stringWithFormat:@"%@", lab.freeMachines];
+    self.labNameBackground.backgroundColor = [UIColor labCellBackgroundColor];
+    self.topCellBackground.backgroundColor = ([lab.percentageBusy integerValue] < 15) ? [UIColor labCellGreenColor] : [UIColor labCellRedColor];
+    
+    self.labNameBackground.layer.cornerRadius = 5;
+    self.labNameBackground.layer.masksToBounds = YES;
 }
 
 @end
