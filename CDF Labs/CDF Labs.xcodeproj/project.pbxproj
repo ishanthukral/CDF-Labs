@@ -27,12 +27,10 @@
 		8650ADD11906DB05009CF008 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8650ADCF1906DB05009CF008 /* InfoPlist.strings */; };
 		8650ADD31906DB05009CF008 /* CDF_LabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650ADD21906DB05009CF008 /* CDF_LabsTests.m */; };
 		8650ADDD1906DB6C009CF008 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8650ADDC1906DB6C009CF008 /* MainStoryboard.storyboard */; };
-		8650ADE11906DBEB009CF008 /* ITLabTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650ADDF1906DBEB009CF008 /* ITLabTableViewCell.m */; };
-		8650ADE21906DBEB009CF008 /* ITLabTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8650ADE01906DBEB009CF008 /* ITLabTableViewCell.xib */; };
-		8650ADE61906DCEF009CF008 /* ITLabTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8650ADE51906DCEF009CF008 /* ITLabTableViewController.m */; };
 		86DAC16B1907565300877DBF /* UIColor+CDFLabs.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC16A1907565300877DBF /* UIColor+CDFLabs.m */; };
 		86DAC1721907583100877DBF /* ITLabCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC1711907583100877DBF /* ITLabCollectionViewCell.m */; };
 		86DAC1741907584500877DBF /* ITLabCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86DAC1731907584500877DBF /* ITLabCollectionViewCell.xib */; };
+		86DAC17719075A6500877DBF /* ITLabCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86DAC17619075A6500877DBF /* ITLabCollectionViewController.m */; };
 		BA58111DC368475696CDC836 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4511335801D74C04923BDABB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,16 +77,13 @@
 		8650ADD01906DB05009CF008 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8650ADD21906DB05009CF008 /* CDF_LabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDF_LabsTests.m; sourceTree = "<group>"; };
 		8650ADDC1906DB6C009CF008 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8650ADDE1906DBEB009CF008 /* ITLabTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabTableViewCell.h; sourceTree = "<group>"; };
-		8650ADDF1906DBEB009CF008 /* ITLabTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabTableViewCell.m; sourceTree = "<group>"; };
-		8650ADE01906DBEB009CF008 /* ITLabTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITLabTableViewCell.xib; sourceTree = "<group>"; };
-		8650ADE41906DCEF009CF008 /* ITLabTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITLabTableViewController.h; path = ../ITLabTableViewController.h; sourceTree = "<group>"; };
-		8650ADE51906DCEF009CF008 /* ITLabTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITLabTableViewController.m; path = ../ITLabTableViewController.m; sourceTree = "<group>"; };
 		86DAC1691907565300877DBF /* UIColor+CDFLabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CDFLabs.h"; sourceTree = "<group>"; };
 		86DAC16A1907565300877DBF /* UIColor+CDFLabs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CDFLabs.m"; sourceTree = "<group>"; };
 		86DAC1701907583100877DBF /* ITLabCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabCollectionViewCell.h; sourceTree = "<group>"; };
 		86DAC1711907583100877DBF /* ITLabCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabCollectionViewCell.m; sourceTree = "<group>"; };
 		86DAC1731907584500877DBF /* ITLabCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITLabCollectionViewCell.xib; sourceTree = "<group>"; };
+		86DAC17519075A6500877DBF /* ITLabCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabCollectionViewController.h; sourceTree = "<group>"; };
+		86DAC17619075A6500877DBF /* ITLabCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabCollectionViewController.m; sourceTree = "<group>"; };
 		8E6E680B65354367A38AC96D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -252,9 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				8650ADDC1906DB6C009CF008 /* MainStoryboard.storyboard */,
-				8650ADDE1906DBEB009CF008 /* ITLabTableViewCell.h */,
-				8650ADDF1906DBEB009CF008 /* ITLabTableViewCell.m */,
-				8650ADE01906DBEB009CF008 /* ITLabTableViewCell.xib */,
 				86DAC1701907583100877DBF /* ITLabCollectionViewCell.h */,
 				86DAC1711907583100877DBF /* ITLabCollectionViewCell.m */,
 				86DAC1731907584500877DBF /* ITLabCollectionViewCell.xib */,
@@ -266,8 +258,8 @@
 		8650ADE71906DCF6009CF008 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8650ADE41906DCEF009CF008 /* ITLabTableViewController.h */,
-				8650ADE51906DCEF009CF008 /* ITLabTableViewController.m */,
+				86DAC17519075A6500877DBF /* ITLabCollectionViewController.h */,
+				86DAC17619075A6500877DBF /* ITLabCollectionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -361,7 +353,6 @@
 			files = (
 				8650ADDD1906DB6C009CF008 /* MainStoryboard.storyboard in Resources */,
 				8650ADB81906DB05009CF008 /* InfoPlist.strings in Resources */,
-				8650ADE21906DBEB009CF008 /* ITLabTableViewCell.xib in Resources */,
 				86DAC1741907584500877DBF /* ITLabCollectionViewCell.xib in Resources */,
 				8650ADC01906DB05009CF008 /* Images.xcassets in Resources */,
 			);
@@ -416,13 +407,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86041D7619072BEF00F1C075 /* ITLab.m in Sources */,
-				8650ADE61906DCEF009CF008 /* ITLabTableViewController.m in Sources */,
 				86DAC16B1907565300877DBF /* UIColor+CDFLabs.m in Sources */,
 				86DAC1721907583100877DBF /* ITLabCollectionViewCell.m in Sources */,
 				86041DCD1907328500F1C075 /* XPathQuery.m in Sources */,
 				86041D7919072CCD00F1C075 /* ITLabStore.m in Sources */,
-				8650ADE11906DBEB009CF008 /* ITLabTableViewCell.m in Sources */,
 				86041DD3190736B300F1C075 /* ITLabParser.m in Sources */,
+				86DAC17719075A6500877DBF /* ITLabCollectionViewController.m in Sources */,
 				8650ADBA1906DB05009CF008 /* main.m in Sources */,
 				86041DCC1907328500F1C075 /* TFHppleElement.m in Sources */,
 				8650ADBE1906DB05009CF008 /* ITAppDelegate.m in Sources */,

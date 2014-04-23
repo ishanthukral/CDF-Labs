@@ -4,35 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Lab Table View Controller - Root View Controller-->
-        <scene sceneID="0jM-Ui-l3L">
-            <objects>
-                <tableViewController id="5Ph-7A-ZYm" customClass="ITLabTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1gw-hl-SD9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ITLabTableViewCell" id="NNo-NE-Of5" customClass="ITLabTableViewCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NNo-NE-Of5" id="H0e-jc-URQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="5Ph-7A-ZYm" id="Tp2-hd-WIg"/>
-                            <outlet property="delegate" destination="5Ph-7A-ZYm" id="DLG-kZ-pJz"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="xNm-n3-UtV"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="45C-vO-oe9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="241" y="145"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="faf-ar-G1K">
             <objects>
@@ -41,12 +12,48 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="5Ph-7A-ZYm" kind="relationship" relationship="rootViewController" id="A3g-6c-xzK"/>
+                        <segue destination="vux-0z-bGY" kind="relationship" relationship="rootViewController" id="6Sh-Lx-Lq9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Und-vG-U0X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-293" y="145"/>
+        </scene>
+        <!--Lab Collection View Controller-->
+        <scene sceneID="YUS-b8-9R8">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="vux-0z-bGY" customClass="ITLabCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="f6E-3c-j87">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96862751250000001" green="0.96862751250000001" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vq3-mX-G6g">
+                            <size key="itemSize" width="160" height="160"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ITLabCollectionViewCell" id="kGk-fN-Mhp" customClass="ITLabCollectionViewCell">
+                                <rect key="frame" x="0.0" y="64" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vux-0z-bGY" id="Ct1-xR-GBj"/>
+                            <outlet property="delegate" destination="vux-0z-bGY" id="ACG-Rq-qTC"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="5lT-Op-CdH"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSn-eo-NRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="146"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITLab.h"
 
 @interface ITLabCollectionViewCell : UICollectionViewCell
+
+- (void)setupCellWithLab:(ITLab *)lab;
+
 @property (weak, nonatomic) IBOutlet UILabel *labName;
 @property (weak, nonatomic) IBOutlet UILabel *freeMachines;
 @property (weak, nonatomic) IBOutlet UILabel *totalMachines;

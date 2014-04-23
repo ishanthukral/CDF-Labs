@@ -19,13 +19,10 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)setupCellWithLab:(ITLab *)lab {
+    self.labName.text = lab.labName;
+    self.totalMachines.text = [NSString stringWithFormat:@"%@", lab.totalMachines];
+    self.freeMachines.text = [NSString stringWithFormat:@"%@", lab.freeMachines];
 }
-*/
 
 @end
