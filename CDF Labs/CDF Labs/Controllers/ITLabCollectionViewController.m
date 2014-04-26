@@ -44,7 +44,6 @@
     [self setupNavbarButtons];
     [self setupNavBarColors];
     [self setupViewMode];
-//    [self setupShimmerView];
     
     [[self navigationItem] setTitle:kAppName];
     
@@ -89,23 +88,6 @@
     }
 }
 
-- (void)setupShimmerView {
-    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
-//    UIView *shimmeringView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 5)];
-    self.navigationItem.titleView = shimmeringView;
-    
-    UILabel *loadingLabel = [[UILabel alloc] initWithFrame:shimmeringView.bounds];
-    loadingLabel.textAlignment = NSTextAlignmentCenter;
-    [loadingLabel setTextColor:[UIColor whiteColor]];
-    [loadingLabel setFont:[UIFont fontWithName:@"SavoyeLetPlain" size:40.0f]];
-    loadingLabel.text = @"Labs";
-//    [shimmeringView addSubview:loadingLabel];
-    shimmeringView.contentView = loadingLabel;
-    shimmeringView.backgroundColor = [UIColor redColor];
-    
-    shimmeringView.shimmering = YES;
-}
-
 
 # pragma mark - UICollectionView Data Source
 
@@ -114,7 +96,13 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [[[ITLabStore sharedInstance] labs] count];
+    NSArray *labs = [[ITLabStore sharedInstance] labs];
+    
+    if (!labs.count) {
+        [self refresh:nil];
+    }
+    
+    return [labs count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

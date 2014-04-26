@@ -29,13 +29,6 @@ static ITLabStore *instance;
 }
 
 - (NSArray *)labs {
-    
-    if ([[self labStore] count] > 0) {
-        return [self labStore];
-    }
-    
-    [[ITLabParser sharedInstance] downloadLabData];
-    
     return [self labStore];
 }
 
