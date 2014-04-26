@@ -13,7 +13,8 @@ static NSString *const kAppName = @"CDF Labs";
 static NSString *const kViewModeNSUserDefaultsKey = @"viewMode";
 static NSString *const kViewModeCount = @"viewModeCount";
 static NSString *const kViewModePercent = @"viewModePercent";
-static NSString *const kTwitterLink = @"https://github.com/ishanthukral/CDF-Labs";
+static NSString *const kTwitterLink = @"http://www.twitter.com/ishanthukral";
+static NSString *const kGithubLink = @"https://github.com/ishanthukral/CDF-Labs";
 
 # pragma mark - Parser
 static NSString *const kLabUsageUrl = @"http://www.cdf.toronto.edu/usage";

@@ -1,13 +1,19 @@
 PODS:
   - FXBlurView (1.6)
   - Reachability (3.1.1)
+  - Reveal-iOS-SDK (1.0.3)
+  - Shimmer (1.0.1)
 
 DEPENDENCIES:
   - FXBlurView
   - Reachability (~> 3.1)
+  - Reveal-iOS-SDK (~> 1.0)
+  - Shimmer (~> 1.0)
 
 SPEC CHECKSUMS:
   FXBlurView: 06f9f602d529c8e2d87648293d73a618621d3d81
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  Reveal-iOS-SDK: 8e6a6f22a9520437e4a180fe1d4e99f43b75430e
+  Shimmer: a1b92685f04ae7363e655f636a41a276dbb1507e
 
 COCOAPODS: 0.32.1
