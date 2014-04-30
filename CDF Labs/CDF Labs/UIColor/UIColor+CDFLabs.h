@@ -12,6 +12,7 @@
 
 + (UIColor *)labCellGreenColor;
 + (UIColor *)labCellRedColor;
++ (UIColor *)labCellOrangeColor;
 + (UIColor *)labCellBackgroundColor;
 + (UIColor *)collectionViewBackgroundColor;
 + (UIColor *)navigationBarColor;

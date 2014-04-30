@@ -53,20 +53,32 @@ static ITLabParser *instance;
 
 - (void)createLabWithData:(NSArray *)data {
     
-    NSString *labNumber = [[((TFHppleElement *)[data objectAtIndex:labName]) firstChild] content];
-    NSString *machinesFree = [[((TFHppleElement *)[data objectAtIndex:freeMachines]) firstChild] content];
-    NSString *machinesBusy = [[((TFHppleElement *)[data objectAtIndex:busyMachines]) firstChild] content];
+    BOOL notALab = false;
+    
+    NSString *labNumber     = [[((TFHppleElement *)[data objectAtIndex:labName]) firstChild] content];
+    NSString *machinesFree  = [[((TFHppleElement *)[data objectAtIndex:freeMachines]) firstChild] content];
+    NSString *machinesBusy  = [[((TFHppleElement *)[data objectAtIndex:busyMachines]) firstChild] content];
     NSString *machinesTotal = [[((TFHppleElement *)[data objectAtIndex:totalMachines]) firstChild] content];
     
-    // Add BA to labNumber
-    NSString *labNameString = [NSString stringWithFormat:@"BA %@", labNumber];
+    NSString *labNameString;
+    if ([labNumber isEqualToString:@"NX"]) {
+        // TODO: Hacky fix, improve
+        notALab = true;
+    } else if ([labNumber isEqualToString:@"gerstein"]) {
+        labNameString = labNumber.capitalizedString;
+    } else {
+        // Add BA to labNumber
+        labNameString = [NSString stringWithFormat:@"BA %@", labNumber];
+    }
     
     ITLab *lab = [[ITLab alloc] initWithLabName:labNameString
                                andTotalMachines:[NSNumber numberWithInteger:[machinesTotal integerValue]]
                                 andFreeMachines:[NSNumber numberWithInteger:[machinesFree integerValue]]
                                 andBusyMachines:[NSNumber numberWithInteger:[machinesBusy integerValue]]];
     
-    [[ITLabStore sharedInstance] addLab:lab];
+    if (!notALab) {
+        [[ITLabStore sharedInstance] addLab:lab];
+    }
 }
 
 @end

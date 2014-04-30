@@ -25,7 +25,22 @@
     self.labName.text = lab.labName;
     self.labBusyPercentage.text = [NSString stringWithFormat:@"%@%%", lab.percentageBusy];
     self.labNameBackground.backgroundColor = [UIColor labCellBackgroundColor];
-    self.topCellBackground.backgroundColor = ([lab.percentageBusy integerValue] > 80) ? [UIColor labCellRedColor] : [UIColor labCellGreenColor];
+
+    [self setupCellBackgroundForLab:lab];
+}
+
+- (void)setupCellBackgroundForLab:(ITLab *)lab {
+    
+    UIColor *cellBackgroundColor;
+    
+    if (lab.freeMachines.integerValue > 5) {
+        cellBackgroundColor = [UIColor labCellGreenColor];
+    } else {
+        cellBackgroundColor = [UIColor labCellRedColor];
+    }
+    
+    self.topCellBackground.backgroundColor = cellBackgroundColor;
+    
 }
 
 

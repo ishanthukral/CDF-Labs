@@ -18,6 +18,10 @@
     return [UIColor colorWithRed:0.89 green:0.19 blue:0.21 alpha:1];
 }
 
++ (UIColor *)labCellOrangeColor {
+    return [UIColor colorWithRed:0.85 green:0.37 blue:0.31 alpha:1];
+}
+
 + (UIColor *)labCellBackgroundColor {
     return [UIColor colorWithRed:0.89 green:0.89 blue:0.94 alpha:1];
 }

@@ -15,7 +15,6 @@
 #import "ITLabStore.h"
 #import "ITLab.h"
 #import <FXBlurView/FXBlurView.h>
-#import <Shimmer/FBShimmeringView.h>
 
 @interface ITLabCollectionViewController ()
 
